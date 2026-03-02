@@ -18,3 +18,23 @@ int main () {
     swap(a,b);
     return 0;
 }
+
+
+
+
+// alternate approach using swap function
+#include <iostream>
+using namespace std;
+
+int main () {
+    int a = 2 , b = 3;
+    cout << "before swapping: " << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    swap(a,b);
+    cout << "after swapping: " << endl;
+    cout  << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    return 0;
+}
