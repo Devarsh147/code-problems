@@ -846,29 +846,88 @@
 //     return 0; 
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// int fact (int x){
+//     int f = 1;
+//     for(int i = 1; i <= x; i++){
+//         f = f * i;
+//     }
+//     return f;
+    
+// }
+
+// int main () {
+//     int n,r;
+//     cout << "enter n: ";
+//     cin >> n;
+//     cout << "factorial of the number is: " << fact(n) << endl;
+//     cout << "now enter r";
+//     cin >> r;
+//     cout << "your value are n = " << n << " r = " << r << endl;
+//     int a = fact(n);
+//     int b = fact(r);
+//     int c = fact(n-r);
+//     cout << "nCr = " << a/(b*c) << endl;
+//     return 0;
+// }
+
+
+// pascal triangle
+// #include <iostream>
+// using namespace std;
+
+// int fact(int x){
+//     int f = 1;
+//     for(int i = 1; i <= x; i++){
+//         f = f * i;
+//     }
+//     return f;
+// }
+
+// int ncr(int n ,int r){
+//     return fact(n)/(fact(r)*fact(n-r));
+// }
+
+// int main () {
+//     int n;
+//     cout << "enter n: ";
+//     cin >> n;
+//     for(int i = 0; i < n; i++){
+//         for(int j = 0;j <= i; j++){
+//             cout << ncr(i,j) << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+
+//pasacal triangle 
+
 #include <iostream>
 using namespace std;
 
-int fact (int x){
+int fact(int x){
     int f = 1;
-    for(int i = 1; i <= x; i++){
-        f = f * i;
+    for(int i = 1; i<= x; i++){
+        f= f * i;
     }
     return f;
-    
+}
+
+int ncr(int n , int r){
+    return fact(n)/(fact(r)*fact(n-r));
 }
 
 int main () {
-    int n,r;
-    cout << "enter n: ";
-    cin >> n;
-    cout << "factorial of the number is: " << fact(n) << endl;
-    cout << "now enter r";
-    cin >> r;
-    cout << "your value are n = " << n << " r = " << r << endl;
-    int a = fact(n);
-    int b = fact(r);
-    int c = fact(n-r);
-    cout << "nCr = " << a/(b*c) << endl;
+    int n  = 5;
+    for(int i = 0; i <= n ; i++){
+        for(int j = 0; j<=i; j++ ){
+            cout << ncr(i,j) << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }
