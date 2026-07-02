@@ -829,3 +829,46 @@
 //     return 0;
 // }
 
+
+// library funtion 
+
+
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// int main () {
+//     cout << sqrt(40) << endl;
+//     cout << cbrt(40) << endl;
+//     cout << pow(2,3) << endl;
+//     cout << min(2,4) << endl;
+//     cout << max(2,5) << endl;
+//     return 0; 
+// }
+
+#include <iostream>
+using namespace std;
+
+int fact (int x){
+    int f = 1;
+    for(int i = 1; i <= x; i++){
+        f = f * i;
+    }
+    return f;
+    
+}
+
+int main () {
+    int n,r;
+    cout << "enter n: ";
+    cin >> n;
+    cout << "factorial of the number is: " << fact(n) << endl;
+    cout << "now enter r";
+    cin >> r;
+    cout << "your value are n = " << n << " r = " << r << endl;
+    int a = fact(n);
+    int b = fact(r);
+    int c = fact(n-r);
+    cout << "nCr = " << a/(b*c) << endl;
+    return 0;
+}
