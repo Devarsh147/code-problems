@@ -1002,10 +1002,23 @@
 //     cout << "x= " << x << " y= " << y << endl;
 //     return 0;
 
-// poniter
+// // poniter
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int x = 3;
+//     cout << &x ;
+// }
+
 #include <iostream>
 using namespace std;
+
+void print(int n) {
+    if(n==0) return ;
+    cout << n << endl;
+    print(n-1);
+}
+
 int main () {
-    int x = 3;
-    cout << &x ;
+    print(10);
 }
