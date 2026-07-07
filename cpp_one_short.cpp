@@ -906,28 +906,106 @@
 
 //pasacal triangle 
 
+// #include <iostream>
+// using namespace std;
+
+// int fact(int x){
+//     int f = 1;
+//     for(int i = 1; i<= x; i++){
+//         f= f * i;
+//     }
+//     return f;
+// }
+
+// int ncr(int n , int r){
+//     return fact(n)/(fact(r)*fact(n-r));
+// }
+
+// int main () {
+//     int n  = 4;
+//     for(int i = 0; i <= n ; i++){
+//         for(int j = 0; j<=n-i-1; j++){
+//             cout << " ";
+//         }
+//         for(int j = 0; j<=i; j++ ){
+//             cout << ncr(i,j) << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+// //     1 
+// //    1 1 
+// //   1 2 1 
+// //  1 3 3 1 
+// // 1 4 6 4 1 
+
+
+
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int n,m;
+//     cout << "------WELCOME TO V MART-------" << endl;
+//     cout << "WE HAVE EVERYTHING  YOU NEED IN OUR STORE" << endl;
+
+//     char category;
+//     cout << "SELECT THE TYPE OF CATEGORY---->>: ";
+//     cout << " 1: FOOD \n 2: DRINKS \n 3: ELECTRONICS \n 4: FASHION \n 5: BEAUTY \n 6: KITCHEN TEAMS " << endl;
+//     cin >> category;
+//     switch(category){
+//         case '1': cout << "HERE ARE THE FOOD ITEMS : 1:SAMOSA , 2:KACORI , 3:AALO BONDA , 4:PIZZA , 5:BURGER , 6:MAGGI , 7:LAWDALASAN." << endl;
+//         break;
+//         case '2': cout << "HERE ARE THE DRINKS FOR YOU: 1:DARU, 2:PANI, 3:THUMSUP, 4:SPRITE, 5:PEPSI." << endl;
+//         break;
+//         case '3': cout << "HERE ARE YOUR ELECTRONIS ITEMS: " << endl;
+//         break;
+//         case '4': cout << "HERE ARE YOUR FASHION: " << endl;
+//         break;
+//         case '5': cout << "HERE ARE YOUR BEAUTY PRODUCTS: " << endl;
+//         break;
+//         case '6': cout << "HERE ARE YOUR KITCHEN ITEMS: " << endl;
+//         break;
+//         default: "LAWDE SAHI SE SELECT KAR";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int x = 2 ; 
+//     int y = 3;
+//     int temp = x; // swap by adding new variable;
+//     x = y;
+//     y = temp;
+//     cout << "x = " << x << endl;
+//     cout << "y = " << y << endl;
+//     return 0;
+
+// }
+
+
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int x = 2;
+//     int y = 6;
+//     cout << "before swap: " << endl;
+//     cout << "x = " << x << endl;
+//     cout << "y = " << y << endl;
+
+//     x = x + y;
+//     y = x - y;
+//     x = x - y;
+
+//     cout << "x= " << x << " y= " << y << endl;
+//     return 0;
+
+// poniter
 #include <iostream>
 using namespace std;
-
-int fact(int x){
-    int f = 1;
-    for(int i = 1; i<= x; i++){
-        f= f * i;
-    }
-    return f;
-}
-
-int ncr(int n , int r){
-    return fact(n)/(fact(r)*fact(n-r));
-}
-
 int main () {
-    int n  = 5;
-    for(int i = 0; i <= n ; i++){
-        for(int j = 0; j<=i; j++ ){
-            cout << ncr(i,j) << " ";
-        }
-        cout << endl;
-    }
-    return 0;
+    int x = 3;
+    cout << &x ;
 }
