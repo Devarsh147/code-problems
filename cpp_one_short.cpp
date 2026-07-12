@@ -1010,15 +1010,255 @@
 //     cout << &x ;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void print(int n) {
-    if(n==0) return ;
-    cout << n << endl;
-    print(n-1);
-}
+// void print(int n) {
+//     if(n==0) return ;
+//     cout << n << endl;
+//     print(n-1);
+// }
 
-int main () {
-    print(10);
-}
+// int main () {
+//     print(10);
+// }
+
+// #include <iostream>
+// using namespace std;
+// void print(int x , int n){
+//     if(x>n) return;
+//     cout << x << endl;
+//     print(x+1,n);
+// }
+// int main () {
+//     print(1,10);
+//     return 0;
+// }
+
+
+// print 1 to n with single variable
+// #include <iostream>
+// using namespace std;
+
+// void print(int n ){
+//     if(n == 0 ) return;
+//     print(n-1);
+//     cout << n << endl;
+// }
+// int main (){
+//     int n;
+//     cin >> n;
+//     print(n);
+//     return 0;
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int sum(int n){
+//     if(n==1) return 1;
+//     return n + sum(n-1);
+// }
+// // this will work as the n + sum(n-1) will call it till it return 1 then it will be adding all back to the top and we will get the ans.
+// int main () {
+//     int n = 100;
+//     cout << sum(n);
+//     return 0;
+// }
+
+
+// make a function which calculates the factorial of n using recursion.
+// #include <iostream>
+// using namespace std;
+
+// int fact(int n){
+//     if(n==0) return 1;
+//     return n * fact(n-1);
+// }
+
+// int main () {
+//     int n = 3;
+//     cout << fact(n) << endl;
+//     return 0;
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int power(int a, int b){
+//     if(b==0) return 1;
+//     return a * power(a,b-1);
+// }
+// int main () {
+//     int a = 2;
+//     int b = 3;
+//     cout << power(a,b);
+//     return 0;
+// }
+
+// write a function to calculate the nth fibonacco number using recursion.
+// #include <iostream>
+// using namespace std;
+
+// int fibo(int n){
+//     if(n==1 || n == 2) return 1;
+//     return fibo(n-1) + fibo(n-2);
+// }
+
+// int main (){
+//     int n;
+//     cout << "Enter n : " << endl;
+//     cin >> n;
+//     cout << fibo(n);
+//     return 0;
+// }
+
+// // write a program of powwer function in logarithmic method.
+// #include <iostream>
+// using namespace std;
+
+// long long power(long long a, long long b) {
+//     if (b == 0) return 1;
+//     long long half = power(a, b / 2);
+//     if (b % 2 == 0) {
+//         return half * half;
+//     } else {
+//         return a * half * half;
+//     }
+// }
+
+// int main() {
+//     long long a = 2;
+// //     long long b = 10;
+// //     cout << power(a, b) << endl;
+// //     return 0;
+// // }
+
+// #include <iostream>
+// using namespace std;
+
+// void change(int arr[]){
+//     arr[0] =9;
+// }
+// int main () {
+//     int arr[4] = {1,2,3,4};
+//     for(int i=0; i<=3; i++){
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+//     change(arr);
+//     for(int i=0; i<=3; i++){
+//         cout << arr[i] << " " ;
+//     }
+
+//     return 0;
+// }
+
+//calculate the sum of all the element in the given array.
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     int sum = 0;
+//     int arr[] = {1,2,3};
+//     for(int i=0; i<=2; i++){
+//         sum = sum + arr[i];
+//     }
+//     cout << sum;
+//     return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int arr[] = { 1,2,3};
+//     int n = sizeof(arr)/4;
+
+//     int sum = 0 ;
+//     for(int i = 0 ; i < n; i++){
+//         sum+=arr[i];
+
+//     }
+//     cout << sum;
+//     return 0;
+// }
+
+// find the maximun in an array.
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int arr[] = {1,4,73,8,6,44,7,5};
+//     int n = sizeof(arr)/4;
+//     int mx = arr[0];
+//     for(int i=1; i<n;i++){
+//         if(arr[i]<mx){
+//             mx = arr[i];
+//         }
+
+//         //mx = max(mx,arr[i]);
+//     }
+//    cout << mx;
+// }
+
+// in case of negative numbers.
+// #include <iostream>
+// #include <climits>
+// using namespace std;
+
+// int main () {
+//     int arr[] = {-3,-5,-4,-55};
+//     int n = sizeof(arr)/4;
+//     int mx = INT_MIN;
+//     int mn = INT_MAX;
+//     for(int i=0; i<n;i++){
+//         mx = max(mx,arr[i]);
+//         mn = min(mn,arr[i]);
+//     }
+//     cout << "max = " << mx << endl;
+//     cout << "min = " << mn << endl;
+
+//     return 0;
+// }
+
+// Given an array of integers, change the value of 
+//all odd indexed elements to its second multipe
+// and increment all even indexed value by 10.
+
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int arr[] = {1,2,3,4,5};
+//     int n = sizeof(arr)/4;
+
+//     for(int i=0;i<n;i++){
+//         if(arr[i] % 2 == 0){
+//             arr[i] = arr[i]*2;
+//             //arr[i]+=10;
+//         }else {
+//             //arr[i] = arr[i]*arr[i] ;
+//             arr[i]+=10;
+//         }
+//         cout << arr[i]<< " ";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int arr[] = {4,2,6,8,12,31,1,4,7};
+//     int n = sizeof(arr)/4;
+//     int x = 5;
+//     int count = 0;
+//     for (int i=0;i<n;i++){
+//         if(arr[i]>x){
+//             cout << arr[i] << ",";
+//             count++;
+//         }
+        
+//     } 
+//     cout << "\nCount: " << count;
+//     return 0;
+// }
+
