@@ -1262,3 +1262,58 @@
 //     return 0;
 // }
 
+
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int arr[] = {1,2,3,4,5,6};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int sum = 0;
+
+//     for(int i=0; i<n;i++){
+//         sum+=arr[i];
+//     }
+
+//     cout << sum;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main () {
+//     int arr[] = {1,2,3,4,5};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int product = 1;
+
+//     for(int i=0;i<n;i++){
+//         product*=arr[i];
+//     }
+
+//     cout << "1 x 2 x 3 x 4 x 5 := " << product;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     int arr[] = {1,2,3,4,5};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int x = 4;
+
+//     for(int i=0;i<n;i++){
+//         if(arr[i]==x){
+//             cout << "found on index: " << i;
+//         }
+        
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace stdl;
+
+// int main () {
+//     int arr[] = 
+// }
+

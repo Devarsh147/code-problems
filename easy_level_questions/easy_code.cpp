@@ -154,3 +154,39 @@
 //     return 0;
 // }
 
+
+//write a program to fing sum of digits of number.
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     int number =12345;
+//     int sum = 0;
+
+//     while(number > 0){
+//         int digit = number % 10; // extract the last digit;
+//         sum = sum + digit;
+//         number = number / 10; // remove the last digit;
+//     }
+
+//     cout << "the sum of digits is: " << sum  << endl;
+//     return 0; 
+    
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main (){
+//     int num = 6471;
+//     int sum = 0;
+//     while(num>0){
+//         int digit = num % 10; // extracting the last digit;
+//         sum = sum + digit;
+//         num = num / 10 ; // remove the last digit;
+//     }
+
+//     cout << "the sum of last digit is : " << sum << endl;
+//     return 0;
+// }
