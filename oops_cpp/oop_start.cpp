@@ -122,32 +122,98 @@
 // }
 
 
+// // #include <iostream>
+// using namespace std;
+
+
+// class cricketer{
+//     public:
+//     string name;
+//     int runs;
+
+//     cricketer(string n , int r){
+//         name = n;
+//         runs = r;
+//     }
+// };
+
+// void print(cricketer c){
+//     cout << c.name << " " << c.runs << endl;
+// }
+
+// int main () {
+//     cricketer c1("virat",15000);
+//     cricketer c2("rohit",20000);
+
+
+//     print(c1);
+//     print(c2);
+
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// class cric{
+//     public:
+//         string name;
+//         int runs;
+
+//         cric(string name, int runs){                                                   
+//             this->name = name;
+//             this->runs = runs;   
+            
+//         }
+// };
+
+// int main () {
+//     cric c1("virat kohli",23988);
+//     cric c2("dev", 427727);
+
+//     cout << c1.name << " " << c1.runs << endl;
+//     cout << c2.name << " " << c2.runs << endl;
+// } 
+
+
+// object pointer 
+
 #include <iostream>
 using namespace std;
 
-class cricketer{
+class cricketer {
     public:
-    string name;
-    int runs;
+        string name;
+        int runs;
+        float avg;
+    
+    cricketer(string name,int runs,float avg){
+        this->name = name;
+        this->runs = runs;
+        this->avg = avg;
+    }
 
-    cricketer(string n , int r){
-        name = n;
-        runs = r;
+    int matches (){
+        return runs/avg;
+    }
+
+    void print(cricketer c){
+        cout << name << " " << runs << " " << avg;
+    }
+
+    void change(cricketer* c){
+        c->avg = 67;
     }
 };
 
-void print(cricketer c){
-    cout << c.name << " " << c.runs << endl;
-}
+
+
+
 
 int main () {
-    cricketer c1("virat",15000);
-    cricketer c2("rohit",20000);
+    cricketer c1("dev",5444,45.4);
 
-
-    print(c1);
-    print(c2);
-
-
-    return 0;
+    
+        return 0;
 }

@@ -47,7 +47,7 @@
 //     }
 
 //     return 0;
-// }
+// // }
 
 // //write a program to find the largest elemt in an array of 5 integers entered by the user.
 // #include <iostream>
@@ -132,9 +132,9 @@
 //     }
 //     return 0;
 // }
-// 
 
-//write a program to count vowels in string.
+
+// write a program to count vowels in string.
 
 // #include <iostream>
 // using namespace std;
@@ -155,7 +155,7 @@
 // }
 
 
-//write a program to fing sum of digits of number.
+// write a program to fing sum of digits of number.
 // #include <iostream>
 // using namespace std;
 
@@ -188,5 +188,128 @@
 //     }
 
 //     cout << "the sum of last digit is : " << sum << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//   int num = 6;
+//   bool isprime = true;
+
+//   if(num <= 1){
+//     isprime = false; // prime number are always greater than 1;
+//   }else{
+//     for(int i=2;i<=num/2;i++){
+//         if(num % i == 0){
+//             isprime = false;
+//             break; // no need to check further;
+//         }
+//     }
+//   }
+
+//   if(isprime){
+//     cout << "prime number";
+//   }else {
+//     cout << "not a prime number";
+//   }
+
+//   return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     int num = 23;
+//     bool isprime = true;
+
+//     if(num <= 1){
+//         isprime = false;
+//     }else{
+//         for(int i = 2; i <= num/2; i++){
+//             if(num % i == 0){
+//                 isprime = false;
+//                 break;
+//             }
+//         }
+//     }
+
+//     if(isprime){
+//         cout << "prime number : " << num;
+//     }else{
+//         cout << "not a prime number: " << num;
+//     }
+//     return 0;
+// }
+
+// //write a program using function to swap two numbers.
+
+// #include <iostream>
+// using  namespace std;
+
+// void swap(int a, int b){
+//     int temp = a;
+//     a = b;
+//     b = temp;
+//     cout << "a= " << a << endl;
+//     cout << "b= " << b;
+// }
+
+// int main () {
+    
+//     swap(4,9);
+//     return 0;
+// }
+
+
+// // write a program to reverse a string entered by the user.
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main () {
+//     string str;
+
+//     cout << "Enter a string: ";
+//     getline(cin,str);
+
+//     int n = str.length();
+
+//     for(int i = n-1; i >= 0; i--){
+//         cout << str[i];
+//     }
+
+//     cout << endl;
+//     return 0;
+// }
+
+
+// // write a program to check whether a given number is a palindrome.
+// #include <iostream>
+// using namespace std;
+
+// int main () {
+//     int num , original, digit, rev;
+
+//     cout << "enter a number: " ;
+//     cin >> num;
+
+//     original = num;
+//     rev = 0;
+
+//     while(num > 0){
+//         digit = num % 10;
+//         rev = rev * 10 + digit;
+//         num = num/10;
+//     }
+
+//     if(original == rev){
+//         cout << "number is palindrome";
+//     }else{
+//         cout << "not a palindrome";
+//     }
+
 //     return 0;
 // }
